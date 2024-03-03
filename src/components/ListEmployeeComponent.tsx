@@ -37,7 +37,7 @@ export const ListEmployeeComponent = () => {
   const handleDeleteEmployee = (id: number) => {
     deleteEmployee(id)
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      .then((response) => {
+      .then((_response) => {
         getAllListEmployee();
       })
       .catch((error) => {
